@@ -1,0 +1,25 @@
+//Fonts
+$bold-font: 'opensans-bold', 'Arial', sans-serif;
+$semibold-font: 'opensans-semibold', 'Arial', sans-serif;
+$regular-font: 'opensans-regular', 'Arial', sans-serif;
+$light-font: 'opensans-light', 'Arial', sans-serif;
+
+//Mixins
+@mixin ul-reset{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+@mixin tr($time){
+    transition: all $time ease;
+}
+
+@mixin opacity($opacity){
+    opacity: $opacity / 100;
+    filter: alpha(opacity=$opacity);
+}
+
+//Colors
+$accent-color: #cd669a;
+$dark-color: #1a1a1a;
